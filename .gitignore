@@ -1,0 +1,17 @@
+# Fichiers compilés
+*.o
+*.out
+
+# Dossier des objets compilés
+obj/
+
+# Exécutable Linux
+snaketris
+
+# Fichiers temporaires
+*.tmp
+*.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db

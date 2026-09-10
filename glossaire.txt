@@ -1,0 +1,53 @@
+GLOSSAIRE DU PROJET SNAKETRIS
+
+enum.hpp
+- Direction : NORTH, SOUTH, WEST, EAST.
+- Food : EMPTY, FOOD_RED, FOOD_GREEN, FOOD_BLUE, FOOD_STAR.
+
+window.hpp / window.cpp
+- Window : fenêtre SDL et renderer.
+- init_window() : initialise SDL et crée la fenêtre.
+- close_window() : détruit les ressources SDL.
+- set_color() : configure une couleur RGBA.
+- clear_window() : efface l'écran.
+- draw_fill_rectangle() / draw_rectangle() : fonctions de dessin simples.
+- load_texture() : charge une texture BMP.
+- draw_texture() : affiche une texture.
+
+world.hpp / world.cpp
+- World : largeur, hauteur et grille dynamique Food*.
+- init_world() : crée la grille.
+- free_world() : libère la grille.
+- in_world() : vérifie les coordonnées.
+- read_world() / write_world() : accès aux cellules.
+
+snake.hpp / snake.cpp
+- Ring : un anneau du Snake.
+- previous et next : liste doublement chaînée.
+- Snake : tête, direction, premier et dernier anneau.
+- move_snake() appelle move_rings().
+- add_ring() ajoute un anneau.
+- snake_touches_body() détecte une collision avec le corps.
+- remove_tetris_ring() applique la règle de suppression.
+
+view.hpp / view.cpp
+- WorldView : textures du monde.
+- SnakeView : textures du corps et des têtes.
+- draw_world() : affiche toutes les cellules.
+- draw_snake() : affiche le corps puis la tête.
+- draw_number() : affiche le score avec des chiffres à segments.
+
+game.hpp / game.cpp
+- Game : regroupe World, Snake, vues, score et état de la partie.
+- init_game() appelle init_world(), init_snake(), init_world_view() et init_snake_view().
+- keyboard_event() gère les touches.
+- update_game() appelle move_snake(), applique les collisions et les règles.
+- add_random_food() ajoute une nourriture aléatoire.
+- save_game() écrit l'état de la partie dans un fichier texte.
+
+main.cpp
+- Crée Window.
+- Initialise Game.
+- Lance la boucle événementielle.
+- Appelle keyboard_event(), update_game(), draw_world() et draw_snake().
+- Libère les ressources à la fin.
