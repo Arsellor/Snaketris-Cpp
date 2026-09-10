@@ -1,6 +1,6 @@
 # Snaketris – Projet C++ / SDL2
 
-Projet pédagogique construit selon le cadre du document de SAE :
+Projet pédagogique et universitaire:
 - programmation C++ modulaire ;
 ## Dépendances (Linux / Ubuntu / Debian)
 
