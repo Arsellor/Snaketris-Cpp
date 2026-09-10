@@ -48,7 +48,30 @@ Pour choisir le nom du fichier de sauvegarde :
   
 ## Règles
 
-- Le Snake avance automatiquement.
+### Conditions de défaite
+Le serpent perd si sa tête touche :
+- Le bord du plateau
+- Son propre corps
+
+### Les fruits
+Des fruits de trois couleurs différentes peuvent apparaître sur le plateau : **rouge**, **vert** et **bleu**.
+
+Chaque fruit consommé déclenche les actions suivantes :
+1. **Grandissement :** Ajoute un anneau au corps du serpent.
+2. **Score :** Augmente le score de 1 point.
+3. **Apparition :** Fait apparaître un nouveau fruit à un autre endroit.
+
+### Règle « Tetris »
+- Lorsque **trois anneaux consécutifs** ont la même couleur, celui du milieu disparaît automatiquement.
+
+### L’étoile
+Lorsqu'un serpent mange une étoile :
+- **Suppression :** Le jeu cherche et supprime un triplet d'anneaux identiques consécutifs.
+- **Pénalité :** Si un triplet est supprimé, le score diminue légèrement.
+- **Bonus :** La valeur bonus de l'étoile est ensuite ajoutée, ce qui peut faire augmenter le score global selon les règles définies.
+
+---
+
 ## Structure
 
 ```text
