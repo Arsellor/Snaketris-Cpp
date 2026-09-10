@@ -1,7 +1,9 @@
 # Snaketris – Projet C++ / SDL2
 
-Projet pédagogique et universitaire:
-- programmation C++ modulaire ;
+Projet pédagogique construit selon le cadre du document de SAE et programmation C++ modulaire.
+
+Une SAÉ (Situation d'Apprentissage et d'Évaluation) est le cœur de la pédagogie par compétences, particulièrement généralisée dans l'enseignement supérieur (notamment dans les B.U.T. / IUT et certaines formations universitaires ou professionnelles depuis la réforme de 2021).
+
 ## Dépendances (Linux / Ubuntu / Debian)
 
 ```bash
