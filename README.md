@@ -38,6 +38,14 @@ Pour choisir le nom du fichier de sauvegarde :
 ## Commandes
 
 - Flèche haut : aller vers le Nord
+- Flèche haut : aller vers le Nord
+- Flèche bas : aller vers le Sud
+- Flèche gauche : aller vers l’Ouest
+- Flèche droite : aller vers l’Est
+- Espace : mettre en pause / reprendre la partie
+- Q ou Échap : quitter le jeu
+- S : sauvegarder la partie
+  
 ## Règles
 
 - Le Snake avance automatiquement.
